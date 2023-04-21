@@ -1,0 +1,50 @@
+.NavBar__Content{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding-left: 2em;
+    padding-right: 3em;
+}
+
+.NavBar__Letter--Logo {
+    height: 90%;
+}
+
+.NavBar__Anchors {
+    display: none;
+}
+
+.NavBar__Icons {
+    display: flex;
+    gap: 1em;
+    font-size: large;
+    color: lightgray;
+}
+.fa-moon{
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .NavBar__Content{
+        height: 70px;
+    }
+    .fa-bars{
+        display: none;
+    }
+
+    .NavBar__Anchors {
+        width: 50%;
+        max-width: 60%;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+    .NavBar__Anchors li:hover {
+        color: #64DB8E;
+        transform: scale(1.1);
+        
+    }
+}

@@ -1,0 +1,67 @@
+.Footer__Content {
+    width: 100%;
+    height: 320px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.Footer__Anchors {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.Footer__Anchors li {
+    min-width: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1em;
+    line-height: 2.5em;
+}
+
+.Footer__SocialNetworks {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.Footer__SocialNetworks i {
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.bxl-instagram {
+    background-color: rgb(180, 48, 163);
+    font-size: 22px;
+}
+
+.fa-twitter {
+    background-color: rgb(20, 173, 219);
+    font-size: 16px;
+}
+.fa-facebook-f {
+    background-color: rgb(39, 63, 168);
+    font-size: 16px;
+}
+.fa-youtube {
+    background-color: rgb(216, 28, 28);
+    font-size: 16px;
+}
+
+@media (min-width: 600px) {
+    .Footer__Content {
+        height: 250px;
+    }
+    
+}

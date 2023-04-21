@@ -1,0 +1,124 @@
+.Home__Content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.Home__Title {
+    color: lightgray;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+    flex-direction: column;
+}
+
+.Home__Title span {
+    color: gray;
+}
+
+.Home__Content img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.trapdoor {
+    margin-top: 2em;
+    -webkit-transform: translateZ(0px);
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    box-shadow: inset -7px 0px 12px -8px rgba(0, 0, 0, 0.3), inset 7px 0px 12px -8px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: background 400ms ease-in-out;
+    -moz-transition: background 400ms ease-in-out;
+    -ms-transition: background 400ms ease-in-out;
+    -o-transition: background 400ms ease-in-out;
+    transition: background 400ms ease-in-out;
+}
+
+.trapdoor:hover {
+    background: #5c5656;
+}
+
+.trapdoor:hover .door {
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.trapdoor:hover .top {
+    top: -50%;
+}
+
+.trapdoor:hover .bottom {
+    top: 100%;
+}
+
+.top {
+    top: 0;
+}
+
+.top:before {
+    top: 5px;
+}
+
+.bottom {
+    top: 50%;
+}
+
+.bottom::before {
+    top: -20px;
+}
+
+.door {
+    -webkit-transition: top 400ms, box-shadow 200ms, -webkit-transform 300ms;
+    -moz-transition: top 400ms, box-shadow 200ms, -moz-transform 300ms;
+    -ms-transition: top 400ms, box-shadow 200ms, -ms-transform 300ms;
+    -o-transition: top 400ms, box-shadow 200ms, -o-transform 300ms;
+    transition: top 400ms, box-shadow 200ms, transform 300ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    background-color: #5c5656;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    height: 50%;
+}
+
+.door::before {
+    font-family: 'tweet', sans-serif;
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    color: #40ffa0;
+    content: "Download CV";
+    width: 100%;
+    margin-top: .3em;
+
+}
+
+.Home__Btn--CV {
+    position: absolute !important;
+    background-color: #40ffa0;
+    padding: .3em 2em;
+    border-radius: 2em;
+}
