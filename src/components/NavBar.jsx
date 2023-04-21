@@ -4,7 +4,7 @@ import './navBar.css'
 const NavBar = () => {
   return (
     <article className='NavBar__Content'>
-      <img className='NavBar__Letter--Logo' src="public/letter-O.png" alt="letter O green" />
+      <img className='NavBar__Letter--Logo' src="./public/letter-O.png" alt="letter O green" />
       <ul className='NavBar__Anchors'>
         <li><a href="#Home">Home</a></li>
         <li><a href="#About-me">About me</a></li>

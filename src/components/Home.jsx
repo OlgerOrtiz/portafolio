@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <article className='Home__Content'>
       <h1 className='Home__Title'>Hi! I'am frontend developer<span>based in Venezuela</span></h1>
-      <img src="public/fondo1.png" alt="fondo abstract" />
+      <img src="./public/fondo1.png" alt="fondo abstract" />
       <div className="trapdoor">
         <div className="top door">
         </div>
