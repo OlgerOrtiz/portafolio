@@ -1,5 +1,5 @@
 .NavBar__Content{
-    height: 50px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -7,24 +7,29 @@
     background-color: transparent;
     padding-left: 2em;
     padding-right: 3em;
+    position: fixed;
+    z-index: 1;
 }
 
-.NavBar__Letter--Logo {
-    height: 90%;
+.NavBar__Content > a {
+    height: 40%;
+}
+
+.NavBar__Logo {
+    height: 100%;
 }
 
 .NavBar__Anchors {
     display: none;
 }
 
-.NavBar__Icons {
+.NavBar__Menu {
+    color: var(--colorSecond);
     display: flex;
-    gap: 1em;
-    font-size: large;
-    color: lightgray;
+    align-items: center;
 }
-.fa-moon{
-    display: none;
+.bx-menu{
+    font-size: 30px;
 }
 
 @media (min-width: 600px) {
@@ -43,7 +48,7 @@
         color: white;
     }
     .NavBar__Anchors li:hover {
-        color: #64DB8E;
+        color: var(--colorSecond);
         transform: scale(1.1);
         
     }

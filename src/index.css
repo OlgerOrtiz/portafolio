@@ -1,12 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+:root{
+  /* --colorSecond: #a89042; */
+  --colorSecond: rgb(159,138,31);
+  --textPrimary: #e7f9ff;
+  --textSpan : #808080;
+  --ShadowTextPrimary : 0px 0px 2px black;
+}
 
 * {
-  margin: 0;
-  padding: 0;
   border: 0;
   box-sizing: border-box;
   vertical-align: baseline;
 }
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(23,32,96);
+background: linear-gradient(106deg, rgba(23,32,96,1) 4%, rgba(0,0,0,1) 27%, rgba(16,23,68,1) 48%, rgba(0,0,0,1) 68%, rgba(17,25,80,1) 100%);
+}
+
+html ::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+  background-color: var(--textPrimary);
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgb(159,138,31);
+background: linear-gradient(106deg, rgba(159,138,31,1) 10%, rgba(201,178,25,1) 25%, rgba(159,138,31,1) 50%, rgba(201,178,25,1) 75%, rgba(159,138,31,1) 90%);
+  border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  font-size: 100%;
+  font-smooth: always;
+  -wekit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 img,
 picture,
 video,
@@ -16,22 +51,20 @@ figure {
   display: block;
   object-fit: cover;
   object-position: center, center;
+  user-select: none;
 }
 
-a {
+svg {
+  width: 100%;
   display: block;
-  text-decoration: none;
-  color: inherit;
+  fill: currentColor;
 }
 
-p a {
-  display: inline;
-}
 i{
-  color: rgba(255, 255, 255, 0.945);
   display: block;
   font-size: 20px;
 }
+
 hr {
   border: 1px solid rgb(204, 204, 204,.2);
   width: 80vw;
@@ -39,12 +72,31 @@ hr {
   margin-right: auto;
 }
 
-li {
-  list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li,
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+span{
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 form,
@@ -59,22 +111,17 @@ label {
   background-color: transparent;
   display: block;
   color: inherit;
-  appearance: none; /*opcional para personalizar los inputs*/
+  appearance: none;
 }
 
-svg {
-  width: 100%;
-  display: block;
-  fill: currentColor;
+input,
+textarea{
+  outline: none;
+  padding: .5em;
 }
 
-body {
-  min-height: 100vh;
-  font-size: 100%;
-  font-smooth: always;
-  -wekit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Poppins', sans-serif;
-  background-color: rgba(0, 0, 0,.7);
+button{
+  cursor: pointer;
 }
+
 

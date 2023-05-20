@@ -29,35 +29,13 @@
 }
 
 .Footer__SocialNetworks {
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
 }
-.Footer__SocialNetworks i {
-    width: 30px;
-    aspect-ratio: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-.bxl-instagram {
-    background-color: rgb(180, 48, 163);
-    font-size: 22px;
-}
 
-.fa-twitter {
-    background-color: rgb(20, 173, 219);
-    font-size: 16px;
-}
-.fa-facebook-f {
-    background-color: rgb(39, 63, 168);
-    font-size: 16px;
-}
-.fa-youtube {
-    background-color: rgb(216, 28, 28);
-    font-size: 16px;
-}
 
 @media (min-width: 600px) {
     .Footer__Content {
