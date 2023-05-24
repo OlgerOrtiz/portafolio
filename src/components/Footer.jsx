@@ -3,7 +3,7 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <article className='Footer__Content' id='Contact'>
+        <article className='Footer__Content' id=''>
             <ul className='Footer__Anchors'>
                 <li><i className='bx bxs-home'></i> <a href="#"> Home</a></li>
                 <li><i className='bx bxs-user'></i> <a href="#"> About me</a></li>
